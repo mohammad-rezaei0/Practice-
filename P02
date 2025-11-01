@@ -1,0 +1,19 @@
+n = input("Please enter number of lessons: ")
+n = int(n)
+
+grades=[]
+
+for i in range(n):
+    grade = float(input("lesson grade: " ))
+    i+1
+    grades.append(grade)
+
+avg = sum(grades) / len(grades)
+print("Your average : " , avg)
+
+if avg >= 17:
+    print("Perfect ")
+elif avg >= 12:
+    print("pass ")
+else :
+    print("conditional ") 
