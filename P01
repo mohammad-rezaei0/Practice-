@@ -1,0 +1,5 @@
+n = input("Please enter your name: ")
+m = input("Please enter your birth year: ")
+result = 2025 - int (m)
+
+print("welcom",n,"your age is ",result)
