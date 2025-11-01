@@ -1,0 +1,27 @@
+student_list = [
+    {
+        "student_id": 1 ,
+        "name":"Mohammad" , 
+        "grades":[12 , 15 , 18]
+    } , 
+    {
+        "student_id": 2 ,
+        "name":"Elina" ,
+        "grades":[16 , 17 , 20]
+    } , 
+    {
+        "student_id": 3 ,
+        "name":"Mahdi" ,
+        "grades":[14 , 8 ,19 ]
+    }
+]
+
+def calculate_student_gpa(grades):
+    return sum(grades) / len(grades)
+
+for student in student_list :
+    gpa = calculate_student_gpa(student["grades"])
+    print ("---")
+    print ("name:", student['name']   )
+    print ( "average : " , f"{gpa:.1f}")
+    
